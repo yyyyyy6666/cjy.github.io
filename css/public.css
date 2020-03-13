@@ -1,0 +1,29 @@
+/*清除浮动*/
+.clearfix:before,.clearfix:after{content:" ";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none;}
+/*自定义字体*/
+@font-face{
+	font-family:myFont;
+	src:url(../font/sourcecodepro-extralight-webfont.eot),
+		url(../font/sourcecodepro-extralight-webfont.ttf),
+		url(../font/sourcecodepro-extralight-webfont.woff),
+		url(../font/sourcecodepro-extralight-webfont.svg);
+}
+.inner{margin:0 auto;}
+li{float:left;}
+h2{
+	font-size:1.9em;
+	font-weight:normal;
+	color:#43464c;
+	text-align: center;
+	
+}
+p{
+	font-size:1.3em;
+	color:#8e97a9;
+	text-align: center;
+	line-height: 1.6923em;/*22/13*/
+	margin:0 auto;
+}
