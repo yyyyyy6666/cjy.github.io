@@ -1,3 +1,62 @@
+<template>
+  <div class="hello">
+    <header>
+    	<div>前端知识汇总大全------2020向前冲鸭！！！！</div>
+    
+    </header>
+    <!--banner部分-->
+    <section class="banner">
+    	<h1>真正的努力，从来都不动声色</h1>
+    	<div>
+    		<p>Study up, Day Day Up.</p>
+    	</div>
+    	<!-- <nav>
+    	<ul class="clearfix">
+    		<li><a href="#">Sign Up</a></li>
+    		<li><a href="#">Learn More</a></li>
+    	</ul>
+    </nav> -->
+    </section>
+    <!--第一部分icon-->
+    <section class="icon">
+    	<div class="inner">
+    		<ul class="clearfix">
+    			<li class="">
+    				<span class="fa fa-calendar-minus-o" id="vueTz"></span>
+    				<h2>VUE</h2>
+    			</li>
+    			<li>
+    				<span class="fa fa-calendar-minus-o" id="JavaScriptTz"></span>
+    				<h2>JavaScript</h2>
+    			</li>
+    			<li>
+    				<span class="fa fa-calendar-minus-o" id="JavaScriptTz"></span>
+    				<h2>小程序</h2>
+    			</li>
+    			<li>
+    				<span class="fa fa-calendar-minus-o" id="AppletTz"></span>
+    				<h2>uniapp</h2>
+    			</li>
+    		</ul>
+    	</div>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+	 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
 body{font-size:10px;font-family: arial;}
 header{background: #eeeef3;position:relative;position:fixed;width:100%;
 	box-shadow:0 1px 2px #C5C6C8;opacity:0.9;height:50px;text-align: center;line-height: 50px;font-size:20px}
@@ -12,12 +71,15 @@ header nav a{
 	margin-left:0.8em;/*12/15*/
 	color:#43464c;
 }
+.clearfix{
+	display: flex;
+}
 header nav li:first-child a{border-top: 2px solid #f5756c;transition:background 0.3s,color 0.3s;}
 header nav li:first-child a:hover{background: #f5756c;color:#fff;}
 header nav li:last-child a{border-top: 2px solid #6585ed;transition:background 0.3s,color 0.3s;}
 header nav li:last-child a:hover{background: #6585ed;color:#fff;}
 .banner{
-	background: url(../images/banner.jpg) no-repeat;
+	background: url(../../static/images/banner.jpg) no-repeat;
 	background-size: cover;
 	background-origin: border-box;
 	-webkit-background-origin: border-box;
@@ -146,133 +208,7 @@ header nav li:last-child a:hover{background: #6585ed;color:#fff;}
 .icon2 p{
 	width:67.5105%;/*320/474*/
 }
-.payMe .inner,.blue .inner,.list .inner,.HuiMing .inner{
-	width:65.4929%;/*930/1420*/
-}
-.payMe section,.blue section{
-	float:left;
-}
-.payMe section:first-child,.blue section:first-child{
-	width:62.9032%;/*585/930*/
-}
-.payMe h3,.blue h3{
-	font-size: 37px;
-	font-weight:normal;
-	color:#43464c;
-	padding:3.9189em 0 1.0270em 0;/*145/37*//*38/37*/
-}
-.payMe p,.blue p{
-	color:#71767f;
-	text-align:left;
-}
-.payMe nav li,.blue nav li{
-	margin:5.2em 0 14em 0;/*52/10*//*140/10*/
-}
-.payMe nav a{
-	display:block;
-	font-size:1.4em;/*14/10*/
-	width:7.9285em;/*111/14*/
-	height: 3.6428em;/*51/14*/
-	line-height:3.6428em ;
-	text-align:center;
-	color: #f5756c;
 
-}
-.payMe nav li:first-child a{
-	color:#fff;
-	background:#f5756c;
-	border-radius:5px;
-	margin-right:2.1428em;/*30/14*/
-	transition:box-shadow 0.5s;
-}
-.payMe nav li:first-child a:hover{
-	box-shadow:2px 2px 10px 5px #f5756c;
-}
-.payMe section:last-child,.blue section:last-child{
-	width:29.0322%;/*270/930*/
-	margin-left:8.0645%;/*75/930*/
-}
-.payMe section:last-child img{
-	margin-top:16.4em;/*164/10*/
-}
-.blue{
-	background-image:-moz-linear-gradient(left top,#0f1424,#29314b);
-	background-image:-webkit-linear-gradient(left top,#0f1424,#29314b);
-	background-image:-ms-linear-gradient(left top,#0f1424,#29314b);
-	background-image:-o-linear-gradient(left top,#0f1424,#29314b);
-}
-.blue h3{color:#fff;}
-.blue nav a{
-	display:block;
-	font-size:1.4em;/*14/10*/
-	width:7.9285em;/*111/14*/
-	height: 3.6428em;/*51/14*/
-	line-height:3.6428em ;
-	text-align:center;
-	
-}
-.blue nav li:first-child a{
-	background:#4585d8;
-	color:#fff;
-	border-radius:5px;
-}
-.blue nav li:last-child a{
-	width:23.5714em;
-	color: #fff;
-}
-.blue nav li:last-child a span,.blue p span{
-	color:#4585d8;
-}
-.blue p:nth-child(3){
-	padding:15px 0;
-}
-.blue section:last-child img{
-	margin-top:14em;
-}
-.list{
-	background:#4685ff;
-	padding:5.8em 0 7em 0; 
-}
-.list .inner>ul li{
-	font-size:1.6em;
-	float: none;
-	color:#fff;
-	height:3.125em;/*50/16*/
-	line-height:3.125em;
-}
-.list nav a{
-	display:block;
-	font-size: 1.4em;
-	width:7.9285em;/*111/14*/
-	height: 3.6428em;/*51/14*/
-	line-height:3.6428em ;
-	text-align:center;
-	border-radius:5px;
-	color:#232a42;
-	margin-top:3.2142em;/*45/14*/
-}
-.list nav li:first-child a{
-	background:#232a42;
-	color:#fff;
-}
-.HuiMing{
-	background: url(../images/book.jpg) no-repeat;
-	background-size:cover;
-}
-.HuiMing section{
-	
-	background-image: -moz-linear-gradient(left,rgba(185,192,202,1),rgba(185,192,202,0.6));
-	background-image: -webkit-linear-gradient(left,rgba(185,192,202,1),rgba(185,192,202,0.6));
-	background-image: -ms-linear-gradient(left,rgba(185,192,202,1),rgba(185,192,202,0.6));
-	background-image: -o-linear-gradient(left,rgba(185,192,202,1),rgba(185,192,202,0.6));
-}
-.HuiMing .inner p{
-	width:56.9892%;/*530/930*/
-	text-align: left;
-	float:left;
-	color:#54585f;
-	margin:7.5384em 0 10.1538em 0;/*98/13*//*132/13*/
-}
 @media screen and (){
 
 }
@@ -293,3 +229,4 @@ header nav li:last-child a:hover{background: #6585ed;color:#fff;}
 		padding:4em 0;
 	}
 }
+</style>
